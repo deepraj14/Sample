@@ -1,0 +1,143 @@
+.header-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:4em;
+    background-color: rgb(32,34,37);
+    width: 100vw;
+    
+    /* box-shadow: 0px 0px 1em 1px rgb(0, 0, 0);
+    z-index: 1; */
+}
+
+.header-sub-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+.header-content{
+    padding: 0 0.6%;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    z-index: 2;
+}
+
+.codeg-logo{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4.5em;
+    height: 4.5em;
+    object-fit: contain;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+}
+
+.codeg-logo::before{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 4.2em;
+    background-color: rgb(79,79,79,0.5);
+    top: 4.2em;
+    border-radius: 100%;
+    box-shadow: 1px ;
+}
+
+.codeg-logo::after{
+    position: absolute;
+    content: "";
+    height: 7vh;
+    width: 3px;
+    background-color: rgb(79,79,79,0.5);
+    border-radius: 100%;
+    left: 100%;
+    box-shadow: 1px ;
+}
+
+/* .codeg-logo:hover{
+    box-shadow: 1px 1px 0.5em black;
+    border-radius: 25%;
+} */
+
+.codeg-logo > img {
+    height: 85%;
+    width: 85%;
+}
+
+.logo-text{
+    font-family: "Gagalin", sans-serif;
+    font-size: 3rem;
+    color: white;
+}
+.logo-text > span {
+    color: #00ffc3;
+}
+.file-name-textbox {
+    display: flex;
+    justify-content: center;
+    width: 16%;
+    min-width: 10em;
+    height: 2em;
+    border: 2px solid #00ffc2;
+    border-radius: 25px;
+}
+
+.file-name {
+    width: 70%;
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+  
+.file-name:focus {
+    outline: none;  
+}
+  
+.file-name-button {
+    user-select: none;
+    width: 20%;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+}
+.user-info div{
+    user-select: none;
+    transition: all 0.3s ease-in-out;
+    color: rgb(255, 255, 255);
+}
+.user-info > .sign-in:hover {
+    color: rgb(10, 255, 195);
+}
+.user-info > .sign-up:hover {
+    background-color: rgb(10, 255, 195);
+    color: #282c34;
+    border: solid 1px #282c34;
+}
+
+.user-info{
+    display: flex;
+    justify-content: right;
+    align-items: center ;
+    width: 50%;
+}
+.sign-in{
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 5%;
+}
+.sign-up{
+    cursor: pointer;
+    text-decoration: none;
+    padding: 1.5% 3%;
+    border: solid 1px white;
+    border-radius: 5px;
+}
